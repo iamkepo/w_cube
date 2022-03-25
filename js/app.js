@@ -11,8 +11,8 @@ function init() {
 
   let controls = new THREE.OrbitControls( camera, renderer.domElement );
   controls.addEventListener('change', renderer.domElement);
-  // controls.minDistance = 500;
-  // controls.maxDistance = 1500;
+  controls.minDistance = 500;
+  controls.maxDistance = 1500;
   
   let materialArray = [];
   let texture_ft = new THREE.TextureLoader().load( './img/mystic_ft.jpg');
@@ -33,9 +33,7 @@ function init() {
       materialArray[i].side = THREE.BackSide;
   let skyboxGeo = new THREE.BoxGeometry( 10000, 10000, 10000);
   let skybox = new THREE.Mesh( skyboxGeo, materialArray );
-  let skybox1 = new THREE.Mesh( skyboxGeo, materialArray );
   scene.add( skybox );
-  scene.add( skybox1 );
   animate();
 }
 function animate() {
