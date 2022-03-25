@@ -15,12 +15,12 @@ function init() {
   // controls.maxDistance = 1500;
   
   let materialArray = [];
-  let texture_ft = new THREE.TextureLoader().load( 'img/mystic_ft.jpg');
-  let texture_bk = new THREE.TextureLoader().load( 'img/mystic_bk.jpg');
-  let texture_up = new THREE.TextureLoader().load( 'img/mystic_up.jpg');
-  let texture_dn = new THREE.TextureLoader().load( 'img/mystic_dn.jpg');
-  let texture_rt = new THREE.TextureLoader().load( 'img/mystic_rt.jpg');
-  let texture_lf = new THREE.TextureLoader().load( 'img/mystic_lf.jpg');
+  let texture_ft = new THREE.TextureLoader().load( './img/mystic_ft.jpg');
+  let texture_bk = new THREE.TextureLoader().load( './img/mystic_bk.jpg');
+  let texture_up = new THREE.TextureLoader().load( './img/mystic_up.jpg');
+  let texture_dn = new THREE.TextureLoader().load( './img/mystic_dn.jpg');
+  let texture_rt = new THREE.TextureLoader().load( './img/mystic_rt.jpg');
+  let texture_lf = new THREE.TextureLoader().load( './img/mystic_lf.jpg');
     
   materialArray.push(new THREE.MeshBasicMaterial( { map: texture_ft }));
   materialArray.push(new THREE.MeshBasicMaterial( { map: texture_bk }));
