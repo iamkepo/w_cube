@@ -33,7 +33,9 @@ function init() {
       materialArray[i].side = THREE.BackSide;
   let skyboxGeo = new THREE.BoxGeometry( 10000, 10000, 10000);
   let skybox = new THREE.Mesh( skyboxGeo, materialArray );
+  let skybox1 = new THREE.Mesh( skyboxGeo, materialArray );
   scene.add( skybox );
+  scene.add( skybox1 );
   animate();
 }
 function animate() {
