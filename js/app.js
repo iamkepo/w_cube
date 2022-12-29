@@ -31,7 +31,7 @@ function init() {
 
   let controls = new THREE.OrbitControls( camera, renderer.domElement );
   controls.addEventListener('change', renderer.domElement);
-  controls.minDistance = 500;
+  controls.minDistance = 1000;
   controls.maxDistance = 1500;
   
   let materialArray = [];
