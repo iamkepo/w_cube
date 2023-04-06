@@ -31,8 +31,8 @@ function init() {
 
   let controls = new THREE.OrbitControls( camera, renderer.domElement );
   controls.addEventListener('change', renderer.domElement);
-  controls.minDistance = 800;
-  controls.maxDistance = 1500;
+  // controls.minDistance = 800;
+  // controls.maxDistance = 1500;
   
   let materialArray = [];
   let texture = {
@@ -53,7 +53,7 @@ function init() {
 
   for (let i = 0; i < 6; i++)
       materialArray[i].side = THREE.BackSide;
-  let skyboxGeo = new THREE.BoxGeometry( 10000, 10000, 10000);
+  let skyboxGeo = new THREE.BoxGeometry( 100, 100, 100);
   let skybox = new THREE.Mesh( skyboxGeo, materialArray );
   scene.add( skybox );
   animate();
