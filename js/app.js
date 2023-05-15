@@ -31,8 +31,8 @@ function init() {
 
   let controls = new THREE.OrbitControls( camera, renderer.domElement );
   controls.addEventListener('change', renderer.domElement);
-  // controls.minDistance = 800;
-  // controls.maxDistance = 1500;
+  controls.minDistance = 800;
+  controls.maxDistance = 1500;
   
   let materialArray = [];
   let texture = {
